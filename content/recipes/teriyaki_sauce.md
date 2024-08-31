@@ -1,6 +1,6 @@
 ---
-title: Teriyaki Sauce
-tags: [side]
+title: Salmon teriyaki
+tags: [dinner,kids]
 ---
 
 ## Ingredients
@@ -9,8 +9,3 @@ tags: [side]
 - 100 ml soy sauce
 - 1.5 tbspn caster sugar
 
-## Method
-
-- Mix all together
-- Heat gently and dissolve the sugar
-- Reduce to thick consistancy
