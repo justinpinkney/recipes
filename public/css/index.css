@@ -1,0 +1,4 @@
+.tag-filter.active {
+    font-weight: bold;
+    text-decoration: underline;
+}

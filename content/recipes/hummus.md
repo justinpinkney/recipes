@@ -1,4 +1,7 @@
-# Hummus
+---
+title: Hummus
+tags: [side]
+---
 
 ## Owen's Hummus Recipe
 

@@ -1,4 +1,7 @@
-# Beef and Tofu
+---
+title: Beef and Tofu
+tags: [dinner, kids]
+---
 
 ## Ingredients
 

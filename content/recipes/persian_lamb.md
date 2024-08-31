@@ -1,4 +1,7 @@
-# Persian Lamb
+---
+title: Persian Lamb
+tags: [dinner]
+---
 
 ## Ingredients
 
@@ -8,7 +11,7 @@
 - 2 peppercorns
 - 1 stick cinnamon
 - 1/2 tspn tumeric
-- Small carton yoghurt (200 g) 
+- Small carton yoghurt (200 g)
 
 ### Main
 

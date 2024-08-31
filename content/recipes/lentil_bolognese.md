@@ -1,4 +1,7 @@
-# Lentil Bolognese
+---
+title: Lentil Bolognese
+tags: [dinner, kids]
+---
 
 Serves 3
 

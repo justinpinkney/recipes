@@ -1,4 +1,7 @@
-# Baked potato fillings
+---
+title: Baked potato fillings
+tags: [dinner, kids]
+---
 
 ## Tuna and cream cheese
 

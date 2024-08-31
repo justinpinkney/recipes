@@ -1,10 +1,17 @@
-# Sweet potato soup
+---
+title: Sweet potato soup
+tags: [soup]
+---
+
+## Ingredients
 
 - 750g sweet potato (2 large)
 - 2 cloves garlic
 - 1 onion
 - 1 tin (400ml) coconut milk
 - 750-1000ml veg stock
+
+## Method
 
 - Fry onion and garlic for a couple minutes
 - add sweet potato and cook with lid on for 5

@@ -1,4 +1,7 @@
-# Orzo bake
+---
+title: Orzo bake
+tags: [dinner]
+---
 
 ## Ingredients
 

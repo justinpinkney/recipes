@@ -1,3 +1,7 @@
+---
+title: Quesadillas
+tags: [dinner, kids]
+---
 
 ## Ingredients
 - 190g tin sweetcorn

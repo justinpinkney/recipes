@@ -1,4 +1,7 @@
-# Tomato lentil soup
+---
+title: Tomato lentil soup
+tags: [kids,soup]
+---
 
 ## Ingredients
 
