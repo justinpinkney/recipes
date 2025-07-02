@@ -1,3 +1,8 @@
+---
+title: Pasta Bake
+tags: [dinner]
+---
+
 ## Ingredients
 - 400g pasta shells
 - 500ml passata
