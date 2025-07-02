@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Recipes</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="recipe-nav">
+        <a href="/">&larr; Back to recipes</a>
+    </nav>
+    
+    <article class="recipe">
+        <h1>{{ title }}</h1>
+        <div class="recipe-content">
+            {{ content | safe }}
+        </div>
+        
+        {% if tags %}
+        <div class="recipe-tags">
+            {% for tag in tags %}
+                {% if tag != "post" %}
+                <span class="recipe-tag">{{ tag }}</span>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </article>
+</body>
+</html>
