@@ -5,8 +5,6 @@ tags: []
 
 ## Ingredients
 
-For the bread
-
 - 455 g white bread flour
 - 20 g granulated sugar
 - 1 1/4 tsp salt
@@ -18,11 +16,8 @@ For the bread
 - 175 g water
 - 255 g raisins
 - 115 g chopped walnuts
-
-For the cinnamon sugar
-
-- 1/4 cup sugar
-- 1 tbsp cinnamon
+- 1/4 cup sugar (for cinnamon sugar)
+- 1 tbsp cinnamon (for cinnamon sugar)
 
 ## Method
 
