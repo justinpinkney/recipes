@@ -5,6 +5,14 @@
 </head>
 
 <h1>Recipes</h1>
+
+<div class="search-section">
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search recipes..." autocomplete="off">
+    <button type="button" id="clear-search" class="clear-button" style="display: none;">×</button>
+  </div>
+</div>
+
 <ul id="recipe-list">
 {% for post in collections.post %}
     <li class="recipe-item" data-tags="{{ (post.data.tags or []) | join(',') }}">
@@ -26,7 +34,47 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const tagFilters = document.querySelectorAll('.tag-filter');
     const recipeItems = document.querySelectorAll('.recipe-item');
+    const searchInput = document.getElementById('search-input');
     const selectedTags = new Set();
+    let searchTerm = '';
+
+    function filterRecipes() {
+        recipeItems.forEach(item => {
+            const recipeTitle = item.querySelector('.recipe-link').textContent.toLowerCase();
+            const itemTags = item.dataset.tags.split(',');
+            
+            const matchesSearch = searchTerm === '' || recipeTitle.includes(searchTerm);
+            const matchesTags = selectedTags.size === 0 || Array.from(selectedTags).every(tag => itemTags.includes(tag));
+            
+            if (matchesSearch && matchesTags) {
+                item.style.display = 'list-item';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    const clearButton = document.getElementById('clear-search');
+
+    searchInput.addEventListener('input', (e) => {
+        searchTerm = e.target.value.toLowerCase();
+        filterRecipes();
+        
+        // Show/hide clear button
+        if (searchTerm) {
+            clearButton.style.display = 'block';
+        } else {
+            clearButton.style.display = 'none';
+        }
+    });
+
+    clearButton.addEventListener('click', () => {
+        searchInput.value = '';
+        searchTerm = '';
+        clearButton.style.display = 'none';
+        filterRecipes();
+        searchInput.focus();
+    });
 
     tagFilters.forEach(filter => {
         filter.addEventListener('click', (e) => {
@@ -41,14 +89,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 e.target.classList.add('active');
             }
 
-            recipeItems.forEach(item => {
-                const itemTags = item.dataset.tags.split(',');
-                if (selectedTags.size === 0 || Array.from(selectedTags).every(tag => itemTags.includes(tag))) {
-                    item.style.display = 'list-item';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            filterRecipes();
         });
     });
 });
