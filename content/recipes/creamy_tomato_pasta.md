@@ -1,9 +1,7 @@
 ---
-title: "One-Pot Creamy Tomato Pasta"
+title: "Creamy Tomato Pasta"
 tags: ["pasta", "main", "kids"]
 ---
-
-# One-Pot Creamy Tomato Pasta
 
 ## Ingredients
 
