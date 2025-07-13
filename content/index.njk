@@ -4,7 +4,10 @@
   <link rel="stylesheet" href="/css/index.css">
 </head>
 
-<h1>Recipes</h1>
+<div class="header-section">
+  <h1>Recipes</h1>
+  <a href="#" id="random-recipe-link" class="random-link">Random Recipe</a>
+</div>
 
 <div class="search-section">
   <div class="search-container">
@@ -35,8 +38,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const tagFilters = document.querySelectorAll('.tag-filter');
     const recipeItems = document.querySelectorAll('.recipe-item');
     const searchInput = document.getElementById('search-input');
+    const randomRecipeLink = document.getElementById('random-recipe-link');
     const selectedTags = new Set();
     let searchTerm = '';
+
+    function getRandomRecipe() {
+        const visibleRecipes = Array.from(recipeItems).filter(item => 
+            item.style.display !== 'none'
+        );
+        
+        if (visibleRecipes.length === 0) {
+            alert('No recipes match your current filters.');
+            return;
+        }
+        
+        const randomIndex = Math.floor(Math.random() * visibleRecipes.length);
+        const randomRecipe = visibleRecipes[randomIndex];
+        const recipeUrl = randomRecipe.querySelector('.recipe-link').href;
+        
+        window.location.href = recipeUrl;
+    }
 
     function filterRecipes() {
         recipeItems.forEach(item => {
@@ -74,6 +95,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         clearButton.style.display = 'none';
         filterRecipes();
         searchInput.focus();
+    });
+
+    randomRecipeLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        getRandomRecipe();
     });
 
     tagFilters.forEach(filter => {
