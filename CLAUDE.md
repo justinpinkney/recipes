@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a simple recipe website built with Eleventy (11ty), a static site generator. The site displays recipes with tag-based filtering functionality.
 
+## Style
+
+Recipes are written in very terse minimal style. Generally they should have an Ingredients and Method section, each second level headers. They are written in markdown with topmatter specifying the title and the tags (the title should not be repeated in the body). There should be no typical recipe "guff" just the simplest shortest description. Ingredient prep instructions (e.g. finely chopped) should be listed with the ingredients. I am familiar with all these recipes, they simply serve as a minimal reminder.
+
 ## Development Commands
 
 ### Using Make (recommended)
