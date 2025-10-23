@@ -7,7 +7,7 @@ tags: [dinner, kids]
 - 280g dried spaghetti
 - 1 diced courgette
 - 1 large garlic clove
-- 350g canned red salmon
+- 350g canned red salmon (or 2 salmon fillets, oven baked at 180°C for 15 mins and flaked)
 - 100ml double cream
 - 50ml whole milk
 - Juice of 1/2 lemon
