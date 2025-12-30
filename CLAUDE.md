@@ -8,7 +8,28 @@ This is a simple recipe website built with Eleventy (11ty), a static site genera
 
 ## Style
 
-Recipes are written in very terse minimal style. Generally they should have an Ingredients and Method section, each second level headers. They are written in markdown with topmatter specifying the title and the tags (the title should not be repeated in the body). There should be no typical recipe "guff" just the simplest shortest description. Ingredient prep instructions (e.g. finely chopped) should be listed with the ingredients. I am familiar with all these recipes, they simply serve as a minimal reminder.
+Recipes are written in very terse minimal style. Follow these specific formatting rules:
+
+### Structure
+- Use YAML frontmatter with `title` and `tags` fields
+- Never repeat the title in the body
+- Use exactly two sections: "## Ingredients" and "## Method"
+- No introduction, conclusion, or additional text
+
+### Ingredients
+- Use bullet points with dashes (-)
+- Include quantities and prep instructions with the ingredient (e.g. "0.5 red onion, finely chopped")
+- Use precise measurements (e.g. "75g", "0.75 litres", "¼ lemon")
+- No separate prep steps
+
+### Method
+- Use bullet points with dashes (-)
+- Write in imperative mood without capitals (e.g. "fry pancetta", "add orzo")
+- Keep steps extremely concise
+- No unnecessary words or explanations
+- Basic timing included where essential (e.g. "5 mins")
+
+No typical recipe "guff" - just the absolute minimum needed as a reminder for someone familiar with cooking.
 
 ## Development Commands
 
