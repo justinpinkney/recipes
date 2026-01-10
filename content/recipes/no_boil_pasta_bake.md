@@ -18,7 +18,8 @@ tags: [family, dinner]
 ## Method
 
 - heat oven to 180°C
-- add pasta shells, passata, stock, courgette, pepper, onion to large ovenproof dish
+- fry courgette, pepper, onion until soft
+- add pasta shells, passata, stock to large ovenproof dish
 - add Italian seasoning, salt, pepper, mix well
 - sprinkle grated cheese and torn mozzarella on top
 - cover with foil, bake 35 mins
