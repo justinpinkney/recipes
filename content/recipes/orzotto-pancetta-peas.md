@@ -21,6 +21,6 @@ tags: [dinner]
 - Fry onion 5 mins, add the garlic fry 3 mins.
 - Add orzo. Fry for 2 mins, stirring. Pour in some stock and simmer.
 - Add stock and contiue to cook
-- After 5 mins, add petit pois and bring to simmer.
 - Simmer until the orzo is cooked through.
+- add petit pois for the last couple of minutes
 - Add the lemon zest and juice, basil, parmesan and fried pancetta.
